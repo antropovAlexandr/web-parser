@@ -1,0 +1,27 @@
+{
+  "name": "web-parser-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "format:check": "prettier --check .",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\""
+  },
+  "dependencies": {
+    "express": "~4.18.2",
+    "puppeteer": "^20.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
