@@ -5,7 +5,7 @@
   "scripts": {
     "format:check": "prettier --check .",
     "build": "npx tsc",
-    "start": "node dist/index.js",
+    "start": "npm run build && node dist/app.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\""
   },
   "dependencies": {
